@@ -26,15 +26,6 @@ const playSound = (audio) => {
     }
   };
 
-// const playSound = () =>{
-//     correctType.pause();
-//     IncorrectType.pause(); 
-// }
-
-// soundBtn.addEventListener('click',()=>{
-//     playSound();
-// })
-
 const loadpara=()=>{
     let random_para=Math.floor(Math.random()*article.length);
     type_content.innerHTML = '';
@@ -69,7 +60,7 @@ input.addEventListener('input',(e)=>{
            if(letterIndex>0){
             letterIndex--;
             if(char[letterIndex].classList.contains('incorrect')){
-                mistakes--;
+                // mistakes--;
             }
             char[letterIndex].classList.contains('correct','incorrect');
            }
